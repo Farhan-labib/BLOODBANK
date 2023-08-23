@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <!--text view for heading-->
+    <TextView
+        android:id="@+id/idTVHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="WELCOME TO BLOOD BANK"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="21dp" />
+
+    <!--edit text for user name-->
+    <EditText
+        android:id="@+id/idEdtUserName"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/idTVHeader"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress" />
+
+    <!--edit text for user password-->
+    <EditText
+        android:id="@+id/idEdtPassword"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/idEdtUserName"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/idEdtphone"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/idEdtPassword"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter Phone Number"
+        android:inputType="number" />
+
+    <!--button to register our new user-->
+    <Button
+        android:id="@+id/idBtnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ab"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Register User"
+        android:textAllCaps="false" />
+    <TextView
+        android:id="@+id/aa"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/idEdtphone"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:text="Blood Group"
+        />
+    <Spinner
+        android:id="@+id/a"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/aa"
+        android:layout_marginStart="10dp"
+
+        android:layout_marginEnd="10dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/ah"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/a"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:text="Places You Can Donate Blood"
+        />
+    <Spinner
+        android:id="@+id/ab"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/ah"
+        android:layout_marginStart="10dp"
+
+        android:layout_marginEnd="10dp"
+
+        />
+
+</RelativeLayout>
